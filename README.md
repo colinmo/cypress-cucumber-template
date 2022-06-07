@@ -4,11 +4,11 @@ This repository is a template directory structure for use with <https://github.c
 
 ## Cypress Basic testing
 
-Cypress scripts go under `cypress`. Use the command `make test-cypress` to run the command against the docker image `cypress2`
+Cypress scripts go under `/cypress`. Use the command `make test-cypress` to run the command against the docker image `cypress2`
 
 ## Cypress Cucumber testing
 
-Feature files go in `/feature`, with accompanying cypress commands in a directory with the same name as the feature (e.g. `/feature/cyp2.js`). Use the command `make-gherk` to run the command against the docker image `cypress2`
+Feature files go under `/feature`, with accompanying cypress commands in a directory with the same name as the feature (e.g. `/feature/cyp2.js`). Use the command `make test-gherk` to run the command against the docker image `cypress2`
 
 # Environment variables
 

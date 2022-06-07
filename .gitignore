@@ -1,0 +1,6 @@
+output/videos/*.mp4
+output/screens/*.png
+feature/*.feature
+cypress/*.js
+.vscode
+.DS_Store

@@ -1,8 +1,7 @@
 import {
     Given,
     When,
-    Then,
-    Before
+    Then
 } from "cypress-cucumber-preprocessor/steps";
 
 // BEHAT TO CYPRESS //
@@ -17,6 +16,10 @@ function findElement(something) {
     if (me) {
         return me;
     }
+}
+
+function findElements(something) {
+    return findElement(something)
 }
 
 function goToPage(page) {
@@ -121,9 +124,7 @@ Then(/the "(.*)" element should contain "(.*)"/, elementShouldContain)
 
 
 function elementIsSelected(element, selector) {
-    cy
-  .get('h6').contains('Privacy').find('.bp3-button-text')
-  .should('have.text', 'Show only my datasets')
+    cy.get(element).contains(selector).should('be.selected')
 }
 
 Given(/"(.*)" is selected for "(.*)"/, elementIsSelected)
